@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link href="static/css/style.css" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+
+    <body>
+        <header>
+            <h1 id="heading">DOCON</h1>
+            <p>Applicazione per il dimensionamento ottimale dei getti per gli ugelli utilizzati per lo spurgo di fognature</p>
+        </header>
+        <div>
+			
+				<div>
+					<h1>Report di taratura</h1>
+                </div>
+                <hr size="5px">
+                <div>
+                    <h2>Intestazione</h2>
+                    <h3>{{dati["azienda"]}}</h3>
+                    <h4>{{dati["nominativo"]}}</h4>
+                    <p class="sottotitolo">Note accessorie: {{dati["note"]}}</p>
+
+                </div>
+                <hr size="5px">
+                <div>
+                    <h2>Dati in input</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td  style="width: 25%; color:blue;">Pompa:</td>
+                                <td  style="width: 25%">Portata: {{dati["portata_lpm"]}} lpm</td>
+                                <td  style="width: 25%">Pressione: {{dati["pressione_bar"]}} bar</td>
+                                <td  style="width: 25%"></td>
+                            </tr>    
+                            <tr>
+                                <td  style="width: 25%; color: blue;">Tubo HP:</td>
+                                <td  style="width: 25%">Diametro: {{dati["tubo"]["diametro"]}} mm</td>
+                                <td  style="width: 25%">Lunghezza: {{dati["tubo"]["lunghezza"]}} m</td>
+                                <td  style="width: 25%">Materiale: {{dati["tubo"]["materiale"]["etichetta"]}}</td>
+                            </tr>    
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <hr size="5px">
+                <div>
+                    <h2>Parametri di Flusso calcolati</h2>
+                    <table>
+                        <tr>
+                            <td style="width: 25%; color:blue;">Pressione finale</td>
+                            <td style="width: 25%;">{{risultato["pressione_ugello_bar"]}} [bar]</td>
+                            <td style="width: 25%; color:blue;">Perdita di pressione</td>
+                            <td style="width: 25%;">{{risultato["perdita_pressione_bar"]}} [bar]</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; color:blue;">Portata ottimale</td>
+                            <td style="width: 25%;">{{risultato["portata_ottimale_lpm"]}} [lpm]</td>
+                            <td style="width: 25%; color:blue;">Portata in ricircolo</td>
+                            <td style="width: 25%;">{{risultato["portata_ricircolo_lpm"]}} [lpm]</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; color:blue;">Sezione di uscita: </td>
+                            <td style="width: 25%;">{{risultato["area_equivalente"]}} [mm<sup>2</sup>]</td>
+                            <td style="width: 25%; color:blue;">Equivalente a:</td>
+                            <td style="width: 25%;">{{gruppo["num-getti-1"]}} x &#x2300;{{gruppo["foro-scelto-1"]}} [mm<sup>2</sup>]</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; color:blue;">Trazione:</td>
+                            <td style="width: 25%;">{{gruppo["spinta_kg"]}} [kg]</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                                  
+                    
+					
+                    
+
+        
+            
+        </body>
+    
+        
+
+
+</html>

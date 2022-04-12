@@ -1,0 +1,209 @@
+	    label {
+		  font-family: Helvetica, sans-serif;;
+		  font-size: 100%;	
+		}	
+		
+		legend {
+		  font-family: Helvetica, sans-serif;;
+		  font-size: 80%;	
+		  font-weight: bold;
+		}
+
+		.applicazione {
+			font-size: bold;
+			color: green;
+		}
+
+		#portata, #pressione {
+			width: 33%;
+		}
+
+		li {
+			font-family: Helvetica, sans-serif;
+			font-weight: 400;
+		}
+
+		input[type=text], input[type=number], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  font-family: Helvetica, sans-serif;
+		  font-size: 100%;
+		}
+		
+		input[type=submit] {
+		  width: 100%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  font-size: 200%;
+		}
+		
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+		
+		div {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		}
+		
+		h1 {
+			font-family: Helvetica, sans-serif;
+			font-size: 200%;
+			font-weight: 300;
+		}
+
+		h2 {
+			font-family: Helvetica, sans-serif;
+			font-size: 200%;
+			font-weight: 200;
+		}
+		
+		h3 {
+			font-family: Helvetica, sans-serif;
+			font-size: 120%;
+			font-weight: 100;
+		}
+
+		h4 {
+			font-family: Helvetica, sans-serif;
+			font-size: 100%;
+			font-weight: 200;
+		}
+		
+		h5 {
+			font-family: Helvetica, sans-serif;
+			font-size: 200%;
+		}
+
+		h6 {
+			font-family: Helvetica, sans-serif;
+			color: #FF0000;
+			font-size: 100%;
+		}
+
+		
+		p {
+			font-family: Helvetica, sans-serif;
+			font-size: 150%;
+		}
+
+		.descrizione-applicazione, .sottotitolo {
+			font-weight: 200;
+			font-size: 100%;
+		}
+
+
+		td, th {
+			font-family: Helvetica, sans-serif;
+			font-size: 100%;
+			text-align: left;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.button {
+			width: 100%;
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 200%;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		#valutazione-taratura {
+			font-size: 200%;
+			font-weight: bold;
+
+		}
+
+		fieldset:disabled {
+			color: #888
+		}
+
+		.bottom-links {
+			text-align: left;
+			font-family: Helvetica;
+			font-size: 100%;
+		}
+		
+		.nozzle {
+			width:200px;
+			height:200px;
+		}
+
+		.alert {
+			text-align: left;
+			font-family: Helvetica;
+			color:#FF0000; 
+			font-size: 200%;
+			font-weight: bold;
+		}
+		.no-alert {
+			text-align: left;
+			font-family: Helvetica;
+			color:#00FF00; 
+			font-size: 200%;
+			font-weight: bold;
+		}
+
+		#spezzoni {
+			width: 100%;
+		}
+
+		.diametro, .lunghezza, .materiale {
+			width: 20%;
+		}
+
+		.scadente, p {
+			color: red;
+		}
+
+		.buona, p {
+			color: orange;
+		}
+
+		.ottimale, p {
+			color: green;
+		}
+
+		.eccessiva, p{
+			color: gray
+		}
+
+		label, textarea {
+			font-size: .8rem;
+			letter-spacing: 1px;
+		}
+		textarea {
+			padding: 10px;
+			max-width: 100%;
+			line-height: 1.5;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-shadow: 1px 1px 1px #999;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+				
+
+
+			

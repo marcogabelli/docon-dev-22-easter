@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    </head>
+	<body>
+		<table>
+            <thead>
+                <tr>
+                    <th>Codice</th>
+                    <th>Famiglia</th>
+                    <th>Attacco</th>
+                    <th>Dimensioni</th>
+                    <th>Peso (kg)</th>
+                    <th>Inclinazione getti</th>
+                    <th>Nr. getti</th>
+                    <th>Tipo getti</th>
+                    <th>Max pressione (bar)</th>
+                    <th>Min Portata (lit/min)</th>
+                    <th>Max Portata (lit/min)</th>
+                    <th>Min DN (mm)</th>
+                    <th>Max DN (mm)</th>
+                    <th>Descrizione estesa</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ugello in ugelli: %}
+                    <tr>
+                        <td>{{ ugello["Codice"] }}</td>
+                        <td>{{ ugello["Famiglia"] }}</td>
+                        <td>{{ ugello["Attacco"] }}</td>
+                        <td>{{ ugello["Dimensioni"] }}</td>
+                        <td>{{ ugello["Peso (kg)"] }}</td>
+                        <td>{{ ugello["Inclinazione-getti"] }}</td>
+                        <td>{{ ugello["Nr. getti"] }}</td>
+                        <td>{{ ugello["Tipo getti"] }}</td>
+                        <td>{{ ugello["Max pressione [bar]"] }}</td>
+                        <td>{{ ugello["Min Portata (lit/min)"] }}</td>
+                        <td>{{ ugello["Max Portata (lit/min)"] }}</td>
+                        <td>{{ ugello["Min DN (mm)"] }}</td>
+                        <td>{{ ugello["Max DN (mm)"] }}</td>
+                        <td>{{ ugello["Descrizione estesa"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+	</body>
+</html>	
+
+
+

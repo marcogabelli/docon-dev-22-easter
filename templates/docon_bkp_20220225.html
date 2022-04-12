@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link href="static/css/style.css" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body>
+		<div>
+			<div>
+					<h1 id="heading">DOCON</h1>
+                	<p>App per il calcolo della configurazione degli ugelli Nuova ConTec</p>
+            </div>
+
+                    <form action="{{ url_for('step1') }}" method="POST" class="docon-input-form" id="docon-step0">
+						<fieldset>
+							<legend>Specifiche Pompa HP</legend>
+							<div>
+								<label for="portata">Portata [lt/min]: </label>
+								<input type="number" name="portata" id="portata" required>
+							</div>
+							<div>
+								<label for="pressione">Pressione [bar]: </label>
+								<input type="number" name="pressione" id="pressione" required>
+								<input type="checkbox" id="checkBoxPressione" name="pressione-netta" onclick="myFunction()">
+								<label for="checkBoxPressione">Pressione netta all'ugello</label> 					
+							</div>
+
+						</fieldset>
+			            <fieldset id="fieldset0">
+							<legend>Specifiche tubo HP</legend>
+							<div style="overflow-x:auto;">
+							<table>
+								<tr>
+									<td>
+										<input type="checkbox" id="checkBox1" name="tratto1" onclick="myFunction()" checked>
+										<label for="checkBox1">Tratto 1</label> 					
+									<fieldset id="fieldset1">
+										<div>
+											<label for="sel-diametro-tubo-1">Diametro [pollici]:</label>
+											<select name="diametro-tubo-1" id="sel-diametro-tubo-1" required>
+												<option value="">--Scegliere un'opzione--</option>
+												<option value="3.2">1/8"</option>
+												<option value="5.0">3/16"</option>
+												<option value="6.4">1/4"</option>
+												<option value="8.0">5/16"</option>
+												<option value="10.0">3/8"</option>
+												<option value="12.7">1/2"</option>
+												<option value="16.0">5/8"</option>
+												<option value="19.1">3/4"</option>
+												<option value="25.4">1"</option>
+												<option value="31.8">1" 1/4</option>
+												<option value="38.1">1" 1/2</option>
+											</select>
+										</div>
+
+										<div>
+											<label for="sel-lunghezza-tubo-1">Lunghezza [m]:</label>
+											<select name="lunghezza-tubo-1" id="sel-lunghezza-tubo-1" required>
+												<option value="">--Scegliere un'opzione--</option>
+												<option value="5">5</option>
+												<option value="10">10</option>
+												<option value="15">15</option>
+												<option value="20">20</option>
+												<option value="25">25</option>
+												<option value="30">30</option>
+												<option value="40">40</option>
+												<option value="50">50</option>
+												<option value="60">60</option>
+												<option value="80">80</option>
+												<option value="100">100</option>
+												<option value="120">120</option>
+											</select>
+										</div>
+										
+										<div>
+											<label for="sel-materiale-tubo">Materiale:</label>
+											<select name="materiale-tubo-1" id="sel-materiale-tubo-1" required>
+												<option value="">--Scegliere un'opzione--</option>
+												<option value="1.2517">Gomma</option>
+												<option value="1.0013">Plastica</option>
+											</select>
+										</div>
+										</fieldset>
+									</td>	
+									<td>	
+										
+										<input type="checkbox" id="checkBox2" name="tratto2" onclick="myFunction()">
+										<label for="checkBox2">Tratto 2</label> 
+										<fieldset id="fieldset2" disabled>
+											<div>
+												<label for="sel-diametro-tubo-2">Diametro [pollici]:</label>
+												<select name="diametro-tubo-2" id="sel-diametro-tubo-2">
+													<option value="">--Scegliere un'opzione--</option>
+													<option value="5.0">3/16"</option>
+													<option value="6.4">1/4"</option>
+													<option value="8.0">5/16"</option>
+													<option value="10.0">3/8"</option>
+													<option value="12.7">1/2"</option>
+													<option value="16.0">5/8"</option>
+													<option value="19.1">3/4"</option>
+													<option value="25.4">1"</option>
+													<option value="31.8">1" 1/4</option>
+													<option value="38.1">1" 1/2</option>
+													<option value="3.2">1/8"</option>
+												</select>
+											</div>
+
+											<div>
+												<label for="sel-lunghezza-tubo-2">Lunghezza [m]:</label>
+												<select name="lunghezza-tubo-2" id="sel-lunghezza-tubo-2">
+													<option value="">--Scegliere un'opzione--</option>
+													<option value="5">5</option>
+													<option value="10">10</option>
+													<option value="15">15</option>
+													<option value="20">20</option>
+													<option value="25">25</option>
+													<option value="30">30</option>
+													<option value="40">40</option>
+													<option value="50">50</option>
+													<option value="60">60</option>
+													<option value="80">80</option>
+													<option value="100">100</option>
+													<option value="120">120</option>
+												</select>
+											</div>
+											
+											<div>
+												<label for="sel-materiale-tubo-2">Materiale:</label>
+												<select name="materiale-tubo-2" id="sel-materiale-tubo-2">
+													<option value="">--Scegliere un'opzione--</option>
+													<option value="1.2517">Gomma</option>
+													<option value="1.0013">Plastica</option>
+												</select>
+											</div>
+										</fieldset>		
+										</td>
+										<td>	
+											<input type="checkbox" id="checkBox3" name="tratto3" onclick="myFunction()">
+											<label for="checkBox3">Tratto 3</label> 	
+											<fieldset id="fieldset3" disabled>
+												<div>
+													<label for="sel-diametro-tubo-3">Diametro [pollici]:</label>
+													<select name="diametro-tubo-3" id="sel-diametro-tubo-3">
+														<option value="">--Scegliere un'opzione--</option>
+														<option value="5.0">3/16"</option>
+														<option value="3.2">1/8"</option>
+														<option value="8.0">5/16"</option>
+														<option value="10.0">3/8"</option>
+														<option value="12.7">1/2"</option>
+														<option value="16.0">5/8"</option>
+														<option value="19.1">3/4"</option>
+														<option value="25.4">1"</option>
+														<option value="31.8">1" 1/4</option>
+														<option value="38.1">1" 1/2</option>
+														<option value="6.4">1/4"</option>
+													</select>
+												</div>
+
+												<div>
+													<label for="sel-lunghezza-tubo-3">Lunghezza [m]:</label>
+													<select name="lunghezza-tubo-3" id="sel-lunghezza-tubo-3">
+														<option value="">--Scegliere un'opzione--</option>
+														<option value="5">5</option>
+														<option value="10">10</option>
+														<option value="15">15</option>
+														<option value="20">20</option>
+														<option value="25">25</option>
+														<option value="30">30</option>
+														<option value="40">40</option>
+														<option value="50">50</option>
+														<option value="60">60</option>
+														<option value="80">80</option>
+														<option value="100">100</option>
+														<option value="120">120</option>
+													</select>
+												</div>
+												
+												<div>
+													<label for="sel-materiale-tubo-3">Materiale:</label>
+													<select name="materiale-tubo-3" id="sel-materiale-tubo-3">
+														<option value="">--Scegliere un'opzione--</option>
+														<option value="1.2517">Gomma</option>
+														<option value="1.0013">Plastica</option>
+													</select>
+												</div>
+											</fieldset>
+										</td>
+									</tr>	
+								</table>
+							</div>
+						</fieldset>
+						<div>
+							<input type="submit" value="Calcola la perdita di pressione!">
+						</div>
+						
+						
+					</form>
+					
+						
+					
+					<hr>
+
+
+				</div>
+			</div>
+		</div>
+	
+		<script>
+			function myFunction() {
+		      var checkBoxPressione = document.getElementById("checkBoxPressione");
+			  if (checkBoxPressione.checked == true)
+			    fieldset0.disabled = true;
+			  else 
+			    fieldset0.disabled = false;		
+
+			  var checkBox1 = document.getElementById("checkBox1");
+			  var fieldset1 = document.getElementById("fieldset1");
+			  var diametro1 = document.getElementById("sel-diametro-tubo-1");
+			  var lunghezza1 = document.getElementById("sel-lunghezza-tubo-1");
+			  var materiale1 = document.getElementById("sel-materiale-tubo-1");
+			  if (checkBox1.checked == true){
+				fieldset1.disabled = false;
+				diametro1.required = true;
+				lunghezza1.required = true;
+				materiale1.required = true;
+				
+			  } else {
+				fieldset1.disabled = true;
+				diametro1.required = false;
+				lunghezza1.required = false;
+				materiale1.required = false;
+			  }
+			  var checkBox2 = document.getElementById("checkBox2");
+			  var fieldset2 = document.getElementById("fieldset2");
+			  var diametro2 = document.getElementById("sel-diametro-tubo-2");
+			  var lunghezza2 = document.getElementById("sel-lunghezza-tubo-2");
+			  var materiale2 = document.getElementById("sel-materiale-tubo-2");
+			  if (checkBox2.checked == true){
+				fieldset2.disabled = false;
+				diametro2.required = true;
+				lunghezza2.required = true;
+				materiale2.required = true;
+			  } else {
+				fieldset2.disabled = true;
+				diametro2.required = false;
+				lunghezza2.required = false;
+				materiale2.required = false;
+			  }
+			  var checkBox3 = document.getElementById("checkBox3");
+			  var fieldset3 = document.getElementById("fieldset3");
+			  var diametro3 = document.getElementById("sel-diametro-tubo-3");
+			  var lunghezza3 = document.getElementById("sel-lunghezza-tubo-3");
+			  var materiale3 = document.getElementById("sel-materiale-tubo-3"); 
+			  if (checkBox3.checked == true){
+				fieldset3.disabled = false;
+				diametro3.required = true;
+				lunghezza3.required = true;
+				materiale3.required = true;
+			  } else {
+				fieldset3.disabled = true;
+				diametro3.required = false;
+				lunghezza3.required = false;
+				materiale3.required = false;
+			  }
+			}
+
+				
+
+			</script>
+	
+	</body>
+
+
+
+</html>

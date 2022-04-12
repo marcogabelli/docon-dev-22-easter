@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<html>
+	<body>
+		<table>
+            <thead>
+                <tr>
+                    <th>Codice</th>
+                    <th>Tipo</th>
+                    <th>Orifizio (mm)</th>
+                    <th>Materiale</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for inserto in inserti: %}
+                    <tr>
+                        <td>{{ inserto["Codice"] }}</td>
+                        <td>{{ inserto["Tipo"] }}</td>
+                        <td>{{ inserto["Orifizio (mm)"] }}</td>
+                        <td>{{ inserto["Materiale"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+	</body>
+</html>	

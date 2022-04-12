@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+        <script type="text/javascript">
+		
+
+
+            var portata_percentuale = '{{ gruppo["portata-percentuale-1"] }}';
+            var num_getti = '{{ gruppo["num-getti-1"]}}'
+            var area_equivalente = '{{ gruppo["area-equivalente-1"] }}'    
+
+            var portata_ottimale = '{{ risultato["portata_ottimale_lpm"] }}';
+            var speed = '{{ risultato["speed"]}}';
+            var c_d = "";
+            
+
+            function populate(s1,s2) {
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+                s2.innerHTML = "";
+                if (s1.value == "TEI-M4") {
+                    var optionArray = ["|","0.6|0.6","0.8|0.8","1.0|1.0","1.2|1.2","1.4|1.4","1.6|1.6","1.8|1.8"];
+                    var c_d = 0.6;
+                } else if (s1.value == "TEI-M6") {
+                    var optionArray = ["|","0.6|0.6","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6","2.8|2.8","3.0|3.0"];
+                    var c_d = 0.6;
+                } else if (s1.value == "TEI-M6C") {
+                    var optionArray = ["|","0.6|0.6","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6"];
+                    var c_d = 0.9;
+                } else if (s1.value == "TEI-M8C") {
+                    var optionArray = ["|","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6"];
+                    var c_d = 0.8;
+                } else if (s1.value == "TEI-M10C") {
+                    var optionArray = ["|","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6","3.1|3.1","3.4|3.4","4.0|4.0"];
+                    var c_d = 0.9;
+                } else if (s1.value == "TEI-M10x1C") {
+                    var optionArray = ["|","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6","3.1|3.1","3.4|3.4","4.0|4.0"];
+                    var c_d = 0.9;
+                } else if (s1.value == "M12C") {
+                    var optionArray = ["|","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6","3.1|3.1","3.4|3.4","4.0|4.0"];
+                    var c_d = 0.9;
+                } else if (s1.value == "TEE-M6C") {
+                    var optionArray = ["|","0.6|0.6","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6"];
+                    var c_d = 0.9;
+                } else if (s1.value == "TEE-M10x1C") {
+                    var optionArray = ["|","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|d2.6","2.8|2.8","3.1|3.1","3.4|3.4","4.0|4.0"];
+                    var c_d = 0.9;
+                } else if (s1.value == "TEE-1/4C") {
+                    var optionArray = ["|","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6","2.8|2.8","3.1|3.1","3.4|3.4","4.0|4.0"];
+                    var c_d = 0.9;
+                } else if (s1.value == "TEE-M10x1W") {
+                    var optionArray = ["|","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6","2.8|2.8","3.1|3.1","3.4|3.4","4.0|4.0"];
+                    var c_d = 0.75;
+                } else if (s1.value == "TEE-M6W") {
+                    var optionArray = ["|","0.6|0.6","0.8|0.8","1.0|1.0","1.20|1.20","1.4|1.4","1.6|1.6","1.8|1.8","2.0|2.0","2.2|2.2","2.4|2.4","2.6|2.6"];
+                    var c_d = 0.7;
+                } else if (s1.value == "Forati") {
+                    var optionArray = ["|","0.6|0.6","0.75|0.75","0.8|0.8","1.0|1.0","1.20|1.20","1.25|1.25","1.4|1.4","1.5|1.5","1.6|1.6","1.75|1.75","1.8|1.8","2.0|2.0","2.2|2.2","2.25|2.25","2.4|2.4","2.5|2.5","2.6|2.6","2.8|2.8","3.0|3.0"];
+                    var c_d = 0.5;
+                }  
+    
+                for (var option in optionArray) {
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    s2.options.add(newOption);
+                }
+
+                alert('num_getti: ' + num_getti + ", portata_percentuale: " + portata_percentuale + ", portata_ottimale: " + portata_ottimale + ", speed: " + speed + ", c_d: " + c_d);
+                calcolo_foro = Math.sqrt(1.0/num_getti*1000000.0/60.0*portata_percentuale/100.0*portata_ottimale/speed/c_d/1000.0*4.0/Math.PI);
+                alert('calcolo_foro: ' + calcolo_foro);
+                document.getElementById("coefficiente-di-deflusso").innerHTML = c_d;
+                document.getElementById("foro-calcolato").innerHTML = calcolo_foro.toPrecision(4);
+            }
+            function calcolaPortataGruppo(elem1, elem2, elem3, elem4) {
+                var diametro_scelto = document.getElementById(elem1).value;
+                
+                var c_d = document.getElementById("coefficiente-di-deflusso").innerText;
+                var pressione_ugello_bar = document.getElementById('pressione-ugello-bar').innerText;
+                alert('num_getti: ' + num_getti + ', speed: ' + speed + ", diametro: " + diametro_scelto + ", c_d: " + c_d);
+                calcolo_portata = 60000*num_getti*speed*Math.PI*Math.pow(diametro_scelto*0.001,2)/4*Number(c_d); 
+                alert("calcolo_portata: " + calcolo_portata.toPrecision(49));
+                document.getElementById(elem2).innerHTML = calcolo_portata.toPrecision(4);
+                
+                var portata_ottimale = document.getElementById("portata-ottimale").innerText;
+                var percentuale_reale = calcolo_portata / Number(portata_ottimale) * 100;
+
+                var gradi = document.getElementById("gradi-1").innerText;
+                var calcolo_spinta = 0.0228*Math.sqrt(Number(pressione_ugello_bar))*Number(portata_ottimale)*num_getti*Math.cos(gradi/180.0*Math.PI);
+                document.getElementById(elem4).innerHTML = calcolo_spinta.toPrecision(4);
+
+                // var esito = document.getElementById(elem3);
+                alert('percentuale_reale: ' + percentuale_reale);
+                if (percentuale_reale <= 80) {
+                    var html = percentuale_reale.toPrecision(4) + "% taratura scadente";
+                    var classe = 'scadente';
+                } else if (percentuale_reale <= 95) {
+                    var html = percentuale_reale.toPrecision(4) + "% taratura buona";
+                    var classe = 'buona';
+                } else if (percentuale_reale <= 100){
+                    var html = percentuale_reale.toPrecision(4) + "% taratura ottimale";
+                    var classe = 'ottimale';
+                } else {
+                    var html = percentuale_reale.toPrecision(4) + "% taratura eccessiva";
+                    var classe = 'eccessiva';
+                } 
+                                
+                document.getElementById(elem3).innerHTML = html;
+                document.getElementById(elem3).className = classe;
+
+
+            }
+    
+            function formSubmit() {
+                if (document.myform.num_getti == 0) {
+                    alert("Submit non effettuato. Specifica il numero dei getti");
+                    return false;
+                }
+                document.myform.submit();
+                return true;
+    
+            }
+            </script>
+
+		<link href="static/css/style.css" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body>
+        <header>
+            <h1 id="heading">DOCON</h1>
+            <p>Applicazione per il dimensionamento ottimale dei getti per gli ugelli utilizzati per lo spurgo di fognature</p>
+        </header> 
+		
+			
+                   
+                
+                <div>
+                    <h1>Modulo di taratura</h1>
+                    <h2>Dati di input</h2>
+                    <h3>Pompa</h3>
+                    <table>
+                        <tr>
+                            <th>Portata [lpm]</th>
+                            <th>Pressione [bar]</th>
+                        </tr>
+                        <tr>
+                            <td>{{dati["portata_lpm"]}}</td>
+                            <td>{{dati["pressione_bar"]}}</td>
+                        </tr>
+                    </table>
+                    <h3>Tubo HP</h3>
+                    <table>
+                        <tr>
+                            <th>Diametro [mm]</th>
+                            <th>Lunghezza [m]</th>
+                            <th>Materiale</th>
+                        </tr>
+                        <tr>
+                            <td>{{tubo["diametro"]}}</td>
+                            <td>{{tubo["lunghezza"]}}</td>
+                            <td>{{tubo["materiale"]["etichetta"]}}</td>
+                        </tr>
+                    </table>
+                    <h3>Applicazione</h3>
+			        <p>{{dati["applicazione"]}}</p>
+                </div>
+
+                <hr size="5px">
+                <div>
+                    <h2>Parametri di flusso</h2>
+                    
+                    <table>
+                        <tr>
+                            <th>Q<sub>ott</sub> [lpm]</th>
+                            <th>P<sub>u</sub> [lpm]</th>
+                            <th>&#8710P [bar]</th>
+                            <th>v<sub>getto</sub> [m/s]</th>
+                            <th>FP</th>
+                            <th>Q<sub>ric</sub> [lpm]</th>
+                            <th>A<sub>eq</sub> [mm<sup>2</sup>]</th>
+                        </tr>
+                        <tr>
+                            <td id="portata-ottimale">{{risultato["portata_ottimale_lpm"]}}</td>
+                            <td id="pressione-ugello-bar">{{risultato["pressione_ugello_bar"]}}</td>
+                            <td>{{risultato["perdita_pressione_bar"]}}</td>
+                            <td>{{risultato["speed"]}}</td>
+                            <td>{{risultato["fattore-di-portata"]}}</td>
+                            <td>{{risultato["portata_ricircolo_lpm"]}}</td>
+                            <td>{{risultato["area_equivalente"]}}</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+
+                                  
+                <hr size="5px">    
+					
+                <form action="{{ url_for('step3') }}" method="POST" class="docon-input-form" id="docon-step2">
+						
+                    <div>
+                        <input id="field1" name="dati" type="hidden" value="{{ dati }}">
+                        <input id="field2" name="risultato" type="hidden" value="{{ risultato }}">
+                        <input id="field3" name="tubo" type="hidden" value="{{ tubo }}">
+                        <input id="field4" name="gruppo" type="hidden" value="{{ gruppo }}">
+                        
+                        <h2>Individuazione degli inserti o delle forature</h2>
+                        <p class="sottotitolo">specificare il tipo di inserti: da questo dipendono il coefficiente di deflusso e il calcolo del foro ideale e le opzioni dei fori. Una volta selezionato il tipo di inserti e il diametro del relativo orifizio viene calcolata la portata assegnata al gruppo e quindi è possibile effettuare la valutazione della taratura.</p>
+                        <p class="sottotitolo">Se il rapporto tra la portata effettiva e la portata ottimale è:</p>
+                        <ul>
+                            <li>inferiore a 80%: <span style="color:red;">taratura scadente;</span></li>
+                            <li>compresa tra 80% e 95%: <span style="color:orange;">taratura buona;</span></li>
+                            <li>compresa tra 95% e 100%: <span style="color:green;">taratura ottimale;</span></li>
+                            <li>superiore a 100%: <span style="color:gray;">taratura eccessiva;</span></li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <th>Tipo getti</th>
+                                <th>Numero getti</th>
+                                <th>Portata %</th>
+                                <th>Gradi</th>
+                                <th>Cd</th>
+                                <th>Foro calcolato</th>
+                                <th>Foro scelto</th>
+                                <th>Portata gruppo</th>
+                                <th>Spinta</th>
+                            </tr>    
+                            <tr>
+                                <td>
+                                    <select name="sel-tipo-gruppo-1" id="sel-tipo-gruppo-1" onchange="populate(this.id,'foro-scelto-1')" required>
+                                    <option value="">--Scegliere un'opzione--</option>
+                                    <option value="TEI-M4">TEI-M4</option>
+                                    <option value="TEI-M6">TEI-M6</option>
+                                    <option value="TEI-M6C">TEI-M6C</option>
+                                    <option value="TEI-M8C">TEI-M8C</option>
+                                    <option value="TEI-M10C">TEI-M10C</option>
+                                    <option value="TEI-M10x1C">TEI-M10x1C</option>
+                                    <option value="M12C">M12C</option>
+                                    <option value="TEE-M6C">TEE-M6C</option>
+                                    <option value="TEE-M10x1C">TEE-M10x1C</option>
+                                    <option value="TEE-1/4C">TEE-1/4C</option>
+                                    <option value="TEE-M10x1W">TEE-M10x1W</option>
+                                    <option value="TEE-M6W">TEE-M6W</option>
+                                    <option value="Forati">Forati</option>
+                                    </select>
+                                </td>
+                                <td>{{ gruppo["num-getti-1"] }}</td>
+                                <td>{{ gruppo["portata-percentuale-1"] }}</td>
+                                <td id="gradi-1">{{ gruppo["gradi-1"] }}</td>
+                                <td id="coefficiente-di-deflusso"></td>
+                                <td id="foro-calcolato"></td>
+                                <td>
+                                    <select name="foro-scelto-1" id="foro-scelto-1" onchange="calcolaPortataGruppo(this.id, 'portata-reale-gruppo-1', 'valutazione-taratura', 'spinta-1');" required>
+                                        <option value="">--Scegliere un'opzione--</option>
+                                    </select>    
+                                </td>
+                                <td id="portata-reale-gruppo-1"></td>
+                                <td id="spinta-1"></td>
+                                
+                            </tr>
+                        </table> 
+                        
+                        <p id="valutazione-taratura"></p>
+
+                        <input type="submit" value="Conferma la taratura!">
+                        
+                    </div>
+                </form>    
+                <div>
+                    <a class="bottom-links" href="{{ url_for('step1') }}" >Torna allo Step 1</a>
+                    <a class="bottom-links" href="{{ url_for('download', filename="report.pdf") }} >Scarica Report di taratura</a>
+                    <a class="bottom-links" href=".">Effettua una nuova taratura</a>
+                </div>
+                        
+        
+        </body>
+
+        
+
+
+</html>

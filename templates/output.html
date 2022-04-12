@@ -1,0 +1,43 @@
+<!--
+							Aggiungi sezione con risultati dei calcoli
+						-->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="static/css/style.css" rel="stylesheet">
+            <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        </head>
+        <body>						
+			<div>
+				<fieldset>
+					<legend>Input</legend>								
+					<h4>Ugello:</h4>
+					<p>{{myNozzle["Descrizione estesa"]}}</p>
+					<h4>Capacità Pompa HP:</h4>
+					<p>Portata: {{input["portata_lpm"]}} lt/min</p>
+					<p>Pressione: {{input["pressione_bar"]}} lt/min</p>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Calcoli</legend>								
+					<p>Pressione persa: {{risultato["pressione_persa_bar"]}} bar</p>
+					<p>Pressione all'ugello: {{risultato["pressione_ugello_bar"]}} bar</p>
+					<p>Portata effettiva: {{risultato["portata_effettiva_lpm"]}} lt/min</p>
+					<p>Portata in eccesso: {{risultato["portata_in eccesso_lpm"]}} lt/min</p>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Assemblaggio</legend>								
+					{% for g in input["gruppi"]: %}
+						<p>J{{input["gruppi"].index(g)}} = {{g}} x {{inserti_taratura[input["gruppi"].index(g)]["Orifizio (mm)"]}} | {{inserti_taratura[input["gruppi"].index(g)]["Codice"]}} {{inserti_taratura[i]["Descrizione"]}}</p>
+					{% endfor %}
+				</fieldset>
+			</div>
+
+            <div>
+                <a href="{{ url_for('download', filename="report.pdf") }}">Scarica Report di taratura</a>
+            </div>
+		</body>
+    </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<script>
+			function checkPortate(){
+				var percent_1 = document.getElementById("portata-percentuale-1").value;
+				var somma = percent_1;
+				if (somma != 100) {
+					alert('la somma delle portate percentuali dei gruppi deve risultare 100%');
+				} else alert('la somma delle portate percentuali dà 100');
+
+			}
+		</script>
+		<link href="static/css/style.css" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body>
+						
+		<header>
+			<h1 id="heading">DOCON</h1>
+			<p>Applicazione per il dimensionamento ottimale dei getti per gli ugelli utilizzati per lo spurgo di fognature</p>
+		</header>
+		<div>
+			<h2>Dati di input</h2>
+			<h3>Pompa</h3>
+			<table>
+				<tr>
+					<th>Portata [lpm]</th>
+					<th>Pressione [bar]</th>
+				</tr>
+				<tr>
+					<td>{{dati["portata_lpm"]}}</td>
+					<td>{{dati["pressione_bar"]}}</td>
+				</tr>
+			</table>
+			<h3>Tubo HP</h3>
+			<table>
+				<tr>
+					<th>Diametro [pollici]</th>
+					<th>Lunghezza [m]</th>
+					<th>Materiale</th>
+				</tr>
+				<tr>
+					<td>{{tubo["diametro"]}}</td>
+					<td>{{tubo["lunghezza"]}}</td>
+					<td>{{tubo["materiale"]["etichetta"]}}</td>
+				</tr>
+			</table>
+			<h3>Applicazione</h3>
+			<p class="applicazione">{{dati["applicazione"]}}</p>
+		</div>
+		<hr size="5px">
+		<div>
+			<h2>Parametri di flusso calcolati:</h2>
+			
+			<table>
+				<tr>
+					<th>Q<sub>ott</sub> [lpm]</th>
+					<th>P<sub>u</sub> [lpm]</th>
+					<th>&#8710P [bar]</th>
+					<th>v<sub>getto</sub> [m/s]</th>
+					<th>FP</th>
+					<th>Q<sub>ric</sub> [lpm]</th>
+					<th>A<sub>eq</sub> [mm<sup>2</sup>]</th>
+				</tr>
+				<tr>
+					<td>{{risultato["portata_ottimale_lpm"]}}</td>
+					<td>{{risultato["pressione_ugello_bar"]}}</td>
+					<td>{{risultato["perdita_pressione_bar"]}}</td>
+					<td>{{risultato["speed"]}}</td>
+					<td>{{risultato["fattore-di-portata"]}}</td>
+					<td>{{risultato["portata_ricircolo_lpm"]}}</td>
+					<td>{{risultato["area_equivalente"]}}</td>
+				</tr>
+			</table>
+			
+		</div>
+		<hr size="5px">
+		<div>
+			<h2>Configurazione dell'ugello</h2>
+			<p class="sottotitolo">Primo passo: imposto il numero di getti per ogni gruppo (adesso ce n'è solo uno ma saranno diversi), la percentuale di portata totale che è assegnata al singolo gruppo e l'inclinazione dei gettiche servirà per il calcolo della spinta</p>
+			<form action="" method="POST" class="docon-input-form" id="docon-step1" name="myform">	
+				<input id="field1" name="dati" type="hidden" value="{{ dati }}">
+				<input id="field2" name="risultato" type="hidden" value="{{ risultato }}">
+				<input id="field3" name="tubo" type="hidden" value="{{ tubo }}">
+				<input id="field4" name="foro-ideale-1" type="hidden" value>
+				<input id="field5" name="portata-1" type="hidden">
+					
+				<div>
+
+						<table>
+							<tr>
+									
+								<td>	
+									<label for="num-getti-1">Numero di getti:</label>
+									<input type="number" name="num-getti-1" id="num-getti-1" min="0" max="12" required>
+								</td>	
+								<td>
+										<label for="portata-percentuale-1">Portata percentuale</label>
+										<input type="number" name="portata-percentuale-1" id="portata-percentuale-1" min="0" max="100" required>
+								</td>	
+							
+								<td>
+									<label for="gradi-1">Gradi</label>
+									<input type="number" name="gradi-1" id="gradi-1" min="0" max="90" required>
+								
+								</td>
+								
+								
+							</tr>
+							
+						</table>
+					</div>	
+					<div>
+						<input type="submit" formaction="{{ url_for('step2') }}" onclick="checkPortate();" value="Procedi con la taratura!">
+					</div>
+				</form>
+            </div>      
+			<hr>
+		
+		<div>
+			<a class="bottom-links" href=".">Effettua una nuova taratura</a>
+		</div>
+		
+	</body>
+
+
+
+</html>

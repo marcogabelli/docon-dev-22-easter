@@ -1,0 +1,1284 @@
+{
+  "inserti": [
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "0.6",
+      "Codice": "85990.060",
+      "Descrizione": "INSERTO GRANO M4X5 DN 0.6",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "0.8",
+      "Codice": "85990.080",
+      "Descrizione": "INSERTO GRANO M4X5 DN 0.8",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85990.10",
+      "Descrizione": "INSERTO GRANO M4X5 DN 1.0",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85990.12",
+      "Descrizione": "INSERTO GRANO M4X5 DN 1.2",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85990.14",
+      "Descrizione": "INSERTO GRANO M4X5 DN 1.4",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85990.16",
+      "Descrizione": "INSERTO GRANO M4X5 DN 1.6",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M4",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85990.18",
+      "Descrizione": "INSERTO GRANO M4X5 DN 1.8",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "0.6",
+      "Codice": "85992.060",
+      "Descrizione": "INSERT0 GRANO M6X8 DN 0,6",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "0.8",
+      "Codice": "85992.080",
+      "Descrizione": "INSERTO GRANO M6X8 DN 0,8",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85992.10",
+      "Descrizione": "INSERTO GRANO M6X8 DN 1,0",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85992.12",
+      "Descrizione": "INSERTO GRANO M6X8 DN 1,2",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85992.14",
+      "Descrizione": "INSERTO GRANO M6X8 DN 1,4",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85992.16",
+      "Descrizione": "INSERTO GRANO M6X8 DN 1,6",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85992.18",
+      "Descrizione": "INSERTO GRANO M6X8 DN 1,8",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85992.20",
+      "Descrizione": "INSERTO GRANO M6X8 DN 2,0",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85992.22",
+      "Descrizione": "INSERTO GRANO M6X8 DN 2,2",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85992.24",
+      "Descrizione": "INSERTO GRANO M6X8 DN 2,4",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85992.26",
+      "Descrizione": "INSERTO GRANO M6X8 DN 2,6",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85992.28",
+      "Descrizione": "INSERTO GRANO M6X8 DN 2,8",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6",
+      "Materiale": "Acciaio",
+      "Orifizio (mm)": "3.0",
+      "Codice": "85992.30",
+      "Descrizione": "INSERTO GRANO M6X8 DN 3,0",
+      "Cd": "0.6"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "0.6",
+      "Codice": "85993060",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN0,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "0.8",
+      "Codice": "85993.080",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN0,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1",
+      "Codice": "85993.10",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN1,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85993.12",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN1,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85993.14",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN1,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85993.16",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN1,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85993.18",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN1,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85993.20",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN2,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85993.22",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN2,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85993.24",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN2,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85993.26",
+      "Descrizione": "INSERTO CERAMICA GRANO M6X8 DN2,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "0.8",
+      "Codice": "85994.080",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 0,8",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1",
+      "Codice": "85994.10",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 1,0",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85994.12",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 1,2",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85994.14",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 1,4",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85994.16",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 1,6",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85994.18",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 1,8",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85994.20",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 2,0",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85994.22",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 2,2",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85994.24",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 2,4",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M8C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85994.26",
+      "Descrizione": "INSERTO CERAMICA GRANO M8x12 DN 2,6",
+      "Cd": "0.8"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85995.10",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 1,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85995.12",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 1,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85995.14",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 1,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85995.16",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 1,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85995.18",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 1,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85995.20",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 2,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85995.22",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 2,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85995.24",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 2,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85995.26",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 2,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85995.28",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 2,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.1",
+      "Codice": "85995.31",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 3,1",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.4",
+      "Codice": "85995.34",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 3,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "4.0",
+      "Codice": "85995.40",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12DN 4,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85997.10",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 1,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85997.12",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 1,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85997.14",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 1,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85997.16",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 1,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85997.18",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 1,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85997.20",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 2,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85997.22",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 2,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85997.24",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 2,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85997.26",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 2,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85997.28",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 2,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.1",
+      "Codice": "85997.31",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 3,1",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.4",
+      "Codice": "85997.34",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 3,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEI-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "4.0",
+      "Codice": "85997.40",
+      "Descrizione": "INSERTO CERAMICA GRANO M10x12P.1 DN 4,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85996.10",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 1,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85996.12",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 1,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85996.14",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 1,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85996.16",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 1,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85996.18",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 1,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85996.20",
+      "Descrizione": "INSERTO CERAMICO GRANO M12X16DN 2,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85996.22",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 2,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85996.24",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 2,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85996.26",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 2,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85996.28",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 2,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.1",
+      "Codice": "85996.31",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 3,1",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.4",
+      "Codice": "85996.34",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 3,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "M12C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "4.0",
+      "Codice": "85996.40",
+      "Descrizione": "INSERTO CERAMICA GRANO M12X16DN 4,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "0.6",
+      "Codice": "85511.060",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 0,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "0.8",
+      "Codice": "85511.080",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 0,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85511.10",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 1,00",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85511.12",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 1,20",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85511.14",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 1,40",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85511.16",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 1,60",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85511.18",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 1,80",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85511.20",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 2,00",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85511.22",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 2,20",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85511.24",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 2,40",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M6C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85511.26",
+      "Descrizione": "INSERTO CERAMICA TE M6 DN 2,60",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85510.10",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 1,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85510.12",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 1,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85510.14",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 1,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85510.16",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 1,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85510.18",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 1,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85510.20",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 2,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85510.22",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 2,2"
+      ,"Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85510.24",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 2,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85510.26",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 2,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85510.28",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 2,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.1",
+      "Codice": "85510.31",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 3,1",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.4",
+      "Codice": "85510.34",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 3,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "4.0",
+      "Codice": "85510.40",
+      "Descrizione": "INSERTO CERAMICA TE M10X1 DN 4,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85506.10",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 1,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85506.12",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 1,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85506.14",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 1,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85506.16",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 1,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85506.18",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 1,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85506.20",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 2,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85506.22",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 2,2",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85506.24",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 2,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85506.26",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 2,6",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85506.28",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 2,8",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.1",
+      "Codice": "85506.31",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 3,1",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "3.4",
+      "Codice": "85506.34",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 3,4",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-1/4C",
+      "Materiale": "Ceramica",
+      "Orifizio (mm)": "4.0",
+      "Codice": "85506.40",
+      "Descrizione": "INSERTO CERAMICA TE 1/4\"M DN 4,0",
+      "Cd": "0.9"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85510.W10",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 1,00",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85510.W12",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 1,20",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85510.W14",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 1,40",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85510.W16",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 1,60",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85510.W18",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 1,80",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85510.W20",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 2,00",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85510.W22",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 2,20",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85510.W24",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 2,40",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85510.W26",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 2,60",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.8",
+      "Codice": "85510.W28",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 2,80",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "3.1",
+      "Codice": "85510.W31",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 3,10",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "3.4",
+      "Codice": "85510.W34",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 3,40",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M10x1W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "4.0",
+      "Codice": "85510.W40",
+      "Descrizione": "INSERTO WIDIA TE M10X1 DN 4,0",
+      "Cd": "0.75"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "0.6",
+      "Codice": "85511.W06",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 0,6",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "0.8",
+      "Codice": "85511.W08",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 0,8",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.0",
+      "Codice": "85511.W10",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 1,00",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.2",
+      "Codice": "85511.W12",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 1,20",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.4",
+      "Codice": "85511.W14",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 1,40",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.6",
+      "Codice": "85511.W16",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 1,60",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "1.8",
+      "Codice": "85511.W18",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 1,80",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.0",
+      "Codice": "85511.W20",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 2,00",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.2",
+      "Codice": "85511.W22",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 2,20",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.4",
+      "Codice": "85511.W24",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 2,40",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "TEE-M6W",
+      "Materiale": "Widia",
+      "Orifizio (mm)": "2.6",
+      "Codice": "85511.W26",
+      "Descrizione": "INSERTO WIDIA TE M6 DN 2,60",
+      "Cd": "0.7"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "0.6",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "0.75",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "0.8",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.0",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.2",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.25",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.40",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.5",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.6",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.75",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "1.80",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.0",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.2",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.25",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.4",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.5",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.6",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "2.8",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    },
+    {
+      "Tipo": "Forati",
+      "Materiale": "-",
+      "Orifizio (mm)": "3.6",
+      "Codice": "-",
+      "Descrizione": "-",
+      "Cd": "0.5"
+    }
+  ]
+}     

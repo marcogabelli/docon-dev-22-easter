@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link href="static/css/style.css" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body>
+		<div>
+			<div>
+				<div></div>
+					<h1 id="heading">DOCON</h1>
+                	<p>App per il calcolo della configurazione degli ugelli Nuova ConTec</p>
+
+                    {% if myNozzle: %}
+
+                    <h2>Dati in input</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specifiche Pompa HP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Portata:</td>
+                                <td>{{input["portata_lpm"]}} lt/min</td>
+                            </tr>
+                            <tr>
+                                <td>Pressione:</td>
+                                <td>{{input["pressione_bar"]}} bar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specifiche Tubo HP</th>    
+                            </tr>
+                            <tr>
+                                <th>Tratto</th>
+                                <th>Diametro (mm)</th>
+                                <th>Lunghezza (m)</th>
+                                <th>Materiale</th>
+                                <th>DeltaP (bar)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in range(0,3): %}
+                                {% if input["tubi"][i]: %}    
+                                <tr>
+                                    <td>{{ i+1 }}</td>
+                                    
+                                    <td>{{input["tubi"][i]["diametro"]}} mm</td>
+                                    <td>{{input["tubi"][i]["lunghezza"]}} m</td>
+                                    <td>{{input["tubi"][i]["materiale"]["etichetta"]}}</td>
+                                    <td>{{"{:5.1f}".format(perdite_pressione[i])}}</td>
+                                </tr>
+                                {% endif %}
+                            {% endfor %}
+                            
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>{{myNozzle["Codice"]}}</td>
+                                <td>{{myNozzle["Descrizione estesa"]}}</td>
+                                <td><img src="static/images/{{myNozzle["Codice"]}}.jpg" class="nozzle"/></td>
+                            </tr>
+
+                        </thead>
+                    </table>
+                    {% if risultato["errore"] == 0: %}
+                    <h2>Dati in output</h2>    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Grandezza</th>
+                                <th>Valore</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Perdita di pressione nei tubi:</td>
+                                <td>{{risultato["pressione_persa_bar"]}} bar</td>
+                            </tr>
+                            <tr>
+                                <td>Pressione all'ugello:</td>
+                                <td>{{risultato["pressione_ugello_bar"]}} bar</td>
+                            </tr>
+                            <tr>
+                                <td>Portata effettiva:</td>
+                                <td>{{risultato["portata_effettiva_lpm"]}} lt/min</td>
+                            </tr>
+                            <tr>
+                                <td>Portata in eccesso:</td>
+                                <td>{{risultato["portata_in_eccesso_lpm"]}} lt/min</td>
+                            </tr>
+                         {% if input["gruppi"][0] %}
+                            <tr>
+                                <td>Getti frontali:</td>
+                                <td>J0 = {{input["gruppi"][0]}} x {{inserti_taratura[0]["Orifizio (mm)"]}} | {{inserti_taratura[0]["Codice"]}} | {{inserti_taratura[0]["Descrizione"]}}</td>
+                            </tr>
+                            {% endif %}
+                            <tr>
+                                <td>Getti Spinta Gruppo 1:</td>
+                                <td>J1 = {{input["gruppi"][1]}} x {{inserti_taratura[1]["Orifizio (mm)"]}} | {{inserti_taratura[1]["Codice"]}} | {{inserti_taratura[1]["Descrizione"]}}</td>
+                            </tr>
+                            <tr>
+                                <td>Getti Spinta Gruppo 2:</td>
+                                <td>J2 = {{input["gruppi"][2]}} x {{inserti_taratura[2]["Orifizio (mm)"]}} | {{inserti_taratura[2]["Codice"]}} | {{inserti_taratura[2]["Descrizione"]}}</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    {% else %}
+                        <h6> Errore[{{risultato["errore"]}}]Non è stato possibile completare la taratura!</h6>    
+                    {% endif %}
+
+                        
+                        <div>
+							<a href="{{ url_for('download', filename="report.pdf") }}">Scarica Report di taratura</a>
+						</div>
+
+                    {% endif %}
+
+
+					<form action="/" method="POST" class="docon-input-form" id="docon-form					">
+						<fieldset>
+							<legend>Specifiche Pompa HP</legend>
+							<div>
+								<label for="portata">Portata [lt/min]: </label>
+								<input type="number" name="portata" id="portata" required>
+							</div>
+							<div>
+								<label for="pressione">Pressione [bar]: </label>
+								<input type="number" name="pressione" id="pressione" required>
+							</div>
+						</fieldset>
+			            <fieldset>
+							<legend>Specifiche tubo HP</legend>
+							<fieldset>
+								<legend>Tratto 1</legend>
+								<div>
+									<label for="sel-diametro-tubo-1">Diametro [pollici]:</label>
+									<select name="diametro-tubo-1" id="sel-diametro-tubo-1" required>
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="3.2">1/8"</option>
+										<option value="5.0">3/16"</option>
+										<option value="6.0">1/4"</option>
+										<option value="8.0">5/16"</option>
+										<option value="10.0">3/8"</option>
+										<option value="13.0">1/2"</option>
+										<option value="16.0">5/8"</option>
+										<option value="20.0">3/4"</option>
+										<option value="25.0">1"</option>
+										<option value="32.0">1" 1/4</option>
+										<option value="40.0">1" 1/2</option>
+									</select>
+								</div>
+
+								<div>
+									<label for="sel-lunghezza-tubo-1">Lunghezza [m]:</label>
+									<select name="lunghezza-tubo-1" id="sel-lunghezza-tubo-1" required>
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="5">5</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option value="25">25</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+										<option value="50">50</option>
+										<option value="60">60</option>
+										<option value="80">80</option>
+										<option value="100">100</option>
+										<option value="120">120</option>
+									</select>
+								</div>
+								
+								<div>
+									<label for="sel-materiale-tubo">Materiale:</label>
+									<select name="materiale-tubo-1" id="sel-materiale-tubo-1" required>
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="1.2517">Gomma</option>
+										<option value="1.0013">Plastica</option>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>Tratto 2</legend>
+								<div>
+									<label for="sel-diametro-tubo-2">Diametro [pollici]:</label>
+									<select name="diametro-tubo-2" id="sel-diametro-tubo-2">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="3.2">1/8"</option>
+										<option value="5.0">3/16"</option>
+										<option value="6.0">1/4"</option>
+										<option value="8.0">5/16"</option>
+										<option value="10.0">3/8"</option>
+										<option value="13.0">1/2"</option>
+										<option value="16.0">5/8"</option>
+										<option value="20.0">3/4"</option>
+										<option value="25.0">1"</option>
+										<option value="32.0">1" 1/4</option>
+										<option value="40.0">1" 1/2</option>
+									</select>
+								</div>
+
+								<div>
+									<label for="sel-lunghezza-tubo-2">Lunghezza [m]:</label>
+									<select name="lunghezza-tubo-2" id="sel-lunghezza-tubo-2">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="5">5</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option value="25">25</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+										<option value="50">50</option>
+										<option value="60">60</option>
+										<option value="80">80</option>
+										<option value="100">100</option>
+										<option value="120">120</option>
+									</select>
+								</div>
+								
+								<div>
+									<label for="sel-materiale-tubo-2">Materiale:</label>
+									<select name="materiale-tubo-2" id="sel-materiale-tubo-2">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="1.2517">Gomma</option>
+										<option value="1.0013">Plastica</option>
+									</select>
+								</div>
+							</fieldset>		
+							<fieldset>
+								<legend>Tratto 3</legend>
+								<div>
+									<label for="sel-diametro-tubo-3">Diametro [pollici]:</label>
+									<select name="diametro-tubo-3" id="sel-diametro-tubo-3">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="3.2">1/8"</option>
+										<option value="5.0">3/16"</option>
+										<option value="6.0">1/4"</option>
+										<option value="8.0">5/16"</option>
+										<option value="10.0">3/8"</option>
+										<option value="13.0">1/2"</option>
+										<option value="16.0">5/8"</option>
+										<option value="20.0">3/4"</option>
+										<option value="25.0">1"</option>
+										<option value="32.0">1" 1/4</option>
+										<option value="40.0">1" 1/2</option>
+									</select>
+								</div>
+
+								<div>
+									<label for="sel-lunghezza-tubo-3">Lunghezza [m]:</label>
+									<select name="lunghezza-tubo-3" id="sel-lunghezza-tubo-3">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="5">5</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option value="25">25</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+										<option value="50">50</option>
+										<option value="60">60</option>
+										<option value="80">80</option>
+										<option value="100">100</option>
+										<option value="120">120</option>
+									</select>
+								</div>
+								
+								<div>
+									<label for="sel-materiale-tubo-3">Materiale:</label>
+									<select name="materiale-tubo-3" id="sel-materiale-tubo-3">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="1.2517">Gomma</option>
+										<option value="1.0013">Plastica</option>
+									</select>
+								</div>
+							</fieldset>
+						</fieldset>
+						<fieldset>
+							<legend>Ugello</legend>
+							<div>
+								<label for="sel-ugello">Articolo:</label>
+								<select name="ugello" id="sel-ugello" required>
+									<option value="">--Scegliere un'opzione--</option>
+									{% for ugello in ugelli %}
+										<option value={{ ugello["Codice"] }}>{{ ugello["Descrizione estesa"] }}</option>
+									{% endfor %}%}	
+								</select>
+							</div>
+							<!--
+							<div>
+								<label for="sel-num-gruppo-0">Numero di getti frontali:</label>
+								<select name="gruppo-0" id="sel-num-getti-0">
+									<option value="">--Scegliere un'opzione--</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+							<div>
+								<label for="sel-num-gruppo-1">Numero di getti gruppo 1:</label>
+									<select name="gruppo-1" id="sel-num-getti-1">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+								<div>
+									<label for="sel-num-gruppo-2">Numero di getti gruppo 2</label>
+									<select name="gruppo-2" id="sel-num-getti-2">
+										<option value="">--Scegliere un'opzione--</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+							-->
+							<!--
+							<div>
+								<label for="sel-num-gruppo-3">Numero di getti gruppo 3:</label>
+								<select name="gruppo-3" id="sel-num-getti-3">
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+								</select>
+							</div>
+							<div>
+								<label for="sel-num-gruppo-4">Numero di getti gruppo 4:</label>
+								<select name="gruppo-4" id="sel-num-getti-4">
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+								</select>
+							</div>
+						    -->
+						</fieldset>	
+						<div>
+							<input type="submit" value="Calcola la dimensione degli inserti!">
+						</div>
+						
+						
+					</form>
+
+					<hr>
+
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

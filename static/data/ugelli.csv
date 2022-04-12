@@ -1,0 +1,9 @@
+Codice,Famiglia,Attacco,Dimensioni,Peso (kg),Inclinazione getti,Nr. getti,Tipo getti,Max pressione (bar),Min Portata (lit/min),Max Portata (lit/min),Min DN (mm),Max DN (mm)
+5529.06,Arzino,"1/2"" M",31x49,0.1,35,6,TEI-M6,300,40,170,60,200
+5529.06C,Arzino,"1/2"" M",31x49,0.1,35,6,TEI-M6C,300,40,170,60,200
+5528.06,Arzino,"1/2"" F",48x60,0.3,15,6,TEI-M6,300,40,170,60,200
+5528.06C,Arzino,"1/2"" F",48x60,0.3,15,6,TEI-M6C,300,40,170,60,200
+5533.08,Arzino,"1"" F",69x85,0.8,15,8,TEI-M6,300,60,260,150,350
+5533.08C,Arzino,"1"" F",69x85,0.8,15,8,TEI-M6,300,60,260,150,350
+75510.14R,Tremol,"1/2"" F",35x60,0.3,25,,TEI-M4,275,40,170,50,150
+75510.14N,Tremol,"1/2"" M",35x60,0.3,25,,TEI-M4,275,40,170,50,150

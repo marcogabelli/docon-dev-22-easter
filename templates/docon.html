@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link href="static/css/style.css" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body>
+		<header>
+			<h1 id="heading">DOCON</h1>
+			<p>Applicazione per il dimensionamento ottimale dei getti per gli ugelli utilizzati per lo spurgo di fognature</p>
+		</header>
+		
+		<div>
+			
+
+			<!--
+			<div>
+					<h1 id="heading">DOCON</h1>
+                	<p>App per il calcolo della configurazione degli ugelli Nuova ConTec</p>
+            </div>
+			-->
+
+                    <form action="{{ url_for('step1') }}" method="POST" class="docon-input-form" id="docon-step0">
+						<fieldset id="intestazione">
+							<legend>Dati di intestazione</legend>
+							<div>
+								<label for="azienda">Azienda: </label>
+								<input type="text" name="azienda" id="azienda" required>
+							</div>
+							<div>
+								<label for="nominativo">Nominativo: </label>
+								<input type="text" name="nominativo" id="nominativo" required>
+							</div>
+							<div>
+								<label for="note">Note: </label>
+								<textarea name="note" id="note" rows="4" col="200">Aggiungi note</textarea>
+							</div>
+						</fieldset>
+
+						<fieldset id="fieldset0">
+							<legend>Specifiche Pompa HP</legend>
+							<div>
+								<label for="portata">Portata [lt/min]: </label>
+								<input type="number" name="portata" id="portata" required>
+							</div>
+							<div>
+								<label for="pressione">Pressione [bar]: </label>
+								<input type="number" name="pressione" id="pressione" required>
+								<!--
+								<input type="checkbox" id="checkBoxPressione" name="pressione-netta" onclick="myFunction()">
+								<label for="checkBoxPressione">Pressione netta all'ugello</label> 
+								-->					
+							</div>
+
+						</fieldset>
+			            <fieldset id="fieldset1">
+							<legend>Specifiche tubo HP</legend>
+							<div>
+
+								<label for="sel-diametro-tubo">Diametro:</label>
+								<select name="diametro-tubo" id="sel-diametro-tubo" required> 
+										<option value=>--Scegli il diametro--</option>
+										<option value="3.2">1/8"</option> 
+										<option value="5.0">3/16"</option>
+										<option value="6.4">1/4"</option>
+										<option value="8.0">5/16"</option>
+										<option value="10.0">3/8"</option>
+										<option value="12.7">1/2"</option>
+										<option value="16.0">5/8"</option>
+										<option value="19.1">3/4"</option>
+										<option value="25.4">1"</option>
+										<option value="31.8">1 1/4"</option>
+										<option value="38.1">1 1/2"</option></select>
+								
+							</div>
+							<div>
+								<label for="lunghezza-tubo">Lunghezza [m]: </label>
+								<input type="number" name="lunghezza-tubo" id="lunghezza-tubo" required>
+							</div>
+							<div>
+								<label for="sel-materiale-tubo">Materiale:</label>
+								<select name="materiale-tubo" id="sel-materiale-tubo" required>
+									<option value="">--Scegli il materiale--</option>
+									<option value="1.2517">Gomma</option>
+									<option value="1.0013">Plastica</option>
+								</select>
+								
+							</div>	
+						</fieldset>
+						<fieldset id="fieldset2">
+							<legend>Applicazione</legend>
+							<div>
+								<input type="radio" id="lavaggio" name="applicazione" value="Lavaggio" checked>
+								<label for="lavaggio">Lavaggio</label>
+								<p class="descrizione-applicazione">Il parametro da massimizzare per questo tipo di lavoro è la portata.</p>
+							</div>
+							<div>
+								<input type="radio" id="sfondamento" name="applicazione" value="Sfondamento" >
+								<label for="sfondamento">Sfondamento</label>
+								<p class="descrizione-applicazione">Il parametro da massimizzare per questo tipo di lavoro è la velocità dei getti assieme alla pressione.</p>
+							</div>
+							<div>
+								<input type="radio" id="tagliaradici" name="applicazione" value="Tagliaradici" >
+								<label for="tagliaradici">Tagliaradici</label>
+								<p class="descrizione-applicazione">Il parametro da massimizzare per questo tipo di lavoro è la velocità dei getti assieme alla pressione.</p>
+							</div>
+							<div>
+								<input type="radio" id="dissabbiatori" name="applicazione" value="Dissabbiatori" >
+								<label for="dissabbiatori">Dissabbiatori</label>
+								<p class="descrizione-applicazione">Il parametro da massimizzare per questo tipo di lavoro è la trazione dell'ugello che è direttamente proporzionale 
+									al prodotto della portata per la radice della pressione.</p>
+								
+							</div>
+						</fieldset>	
+						<div>
+							<input type="submit" value="Calcola i parametri di flusso!">
+						</div>
+					</form>
+					
+						
+					
+					<hr>
+
+		</div>
+	</body>
+
+
+
+</html>
